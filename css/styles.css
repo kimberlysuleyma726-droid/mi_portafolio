@@ -1,0 +1,155 @@
+* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    background-color: #faa3d9;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #1F5FA8;
+    color: #f3f2f3;
+    padding: 25px 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #A3D8FF;
+}
+
+/* Contenedor principal de secciones */
+main {
+    max-width: 650px;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Separación entre cada sección */
+}
+
+/* Diseño por Secciones (Estilo Tarjeta) */
+section {
+    background-color: #d115db;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+section h2 {
+    color: #0d0d0d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3613e8;
+    padding-bottom: 8px;
+}
+
+/* Imagen circular centrada */
+img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1F5FA8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 15px auto;
+    display: block;
+}
+
+/* Listas alineadas al centro / izquierda limpia */
+ol, ul {
+    text-align: left;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    padding-left: 20px;
+}
+
+h3 {
+    color: #153E70;
+    margin-top: 10px;
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #153E70;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Botón */
+button {
+    background-color: #1F5FA8;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #153E70;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #153E70;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
